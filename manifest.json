@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "kb4zod.server-list",
+  "name": "Server List",
+  "version": "0.1.0",
+  "author": "Hugh Scott",
+  "license": "MIT",
+  "description": "Lists the local servers (listening TCP ports) running on this machine, what each one is, and lets you open or stop them from the bar.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Server List",
+    "description": "Running local servers with open-in-browser and stop actions.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "refreshIntervalSec": 10,
+      "showCount": true,
+      "hideWhenEmpty": false,
+      "showSystem": false,
+      "ignore": []
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 2,
+        "max": 600,
+        "step": 1,
+        "defaultValue": 10
+      },
+      {
+        "key": "showCount",
+        "type": "boolean",
+        "label": "Show server count next to the icon",
+        "defaultValue": true
+      },
+      {
+        "key": "hideWhenEmpty",
+        "type": "boolean",
+        "label": "Hide the widget when nothing is running",
+        "defaultValue": false
+      },
+      {
+        "key": "showSystem",
+        "type": "boolean",
+        "label": "Expand system listeners by default",
+        "defaultValue": false
+      }
+    ]
+  }
+}
