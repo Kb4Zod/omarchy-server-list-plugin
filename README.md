@@ -1,8 +1,11 @@
-# Omarchy Server List plugin
+# omarchy-server-list-plugin
 
-An [Omarchy](https://omarchy.org) shell plugin that adds a bar widget showing every local
-server running on your machine (any process listening on a TCP port), says
-what each one is, and lets you open or stop it from a dropdown in the bar.
+An [Omarchy](https://omarchy.org) shell plugin that adds a bar widget showing every local server running on your machine, says what each one is, and lets you open or stop it from a dropdown.
+
+- **Status:** done (archived 2026-10-06)
+- **Stack:** Python 3 standard library (`bin/servers.py`), QML (Omarchy shell / Quickshell)
+- **Run it:** `omarchy plugin add https://github.com/Kb4Zod/omarchy-server-list-plugin.git --enable`
+- **Repo:** github.com/Kb4Zod/omarchy-server-list-plugin (public)
 
 ![Server List dropdown](docs/screenshot.png)
 
